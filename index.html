@@ -19,10 +19,10 @@
 <body>
   
   <!-- Header : Navbar -->
-  <header>
+  <header id="home">
     <!-- <nav class="navbar navbar-expand"> -->
     <nav class="d-flex justify-content-between align-items-center navbar">
-      <a href="#hero" class="navbar-brand"><img src="./assets/logo-bcr.png" alt="" class="logo"></a>
+      <a href="#home" class="navbar-brand"><img src="./assets/logo-bcr.png" alt="" class="logo"></a>
 
       <!-- hidden -->
       <span class="navbar-toggler-icon d-lg-none" id="hamburger-menu"></span>
@@ -37,7 +37,7 @@
           </div>
         </>
 
-        <a class="nav-link" href="#our-sercive">Our Sevices</a>
+        <a class="nav-link" href="#our-service">Our Sevices</a>
         <a class="nav-link" href="#why-us">Why Us</a>
         <a class="nav-link" href="#testimonial">Testimonial</a>
         <a class="nav-link" href="#faq">FAQ</a>
@@ -45,31 +45,59 @@
 
       </div>
     </nav>
-
-
   </header>
 
   <!-- Content -->
   <main>
 
     <!-- Section 1 : Hero / Main -->
-    <section id="hero" class="row hero">
+    <section class="row hero">
       <div class="col-lg-5 my-auto">
-        <h2 class="fw-bold mb-3 judul">Sewa & Rental Mobil Terbaik di kawasan Kediri</h2>
+        <h2 class="fw-bold mb-3 judul-hero">Sewa & Rental Mobil Terbaik di kawasan Kediri</h2>
         <p class="fw-normal col-lg-11 text">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
         <button class="tombol">Mulai Sewa Mobil</button>
       </div>
       
-      <div class="col-lg-7">
+      <aside class="col-lg-7">
         <div class="justify-content-end align-items-end">
-          <img src="./assets/img_car.png" alt="" class="mt-xxl-2 mt-lg-5 bicar">
+          <img src="./assets/img_car.png" alt="ini gambar mobil mercedes" class="mt-xxl-2 mt-lg-5 bicar">
         </div>
-      </div>
+      </aside>
     </section>
 
     <!-- Section 2 : Our Service -->
-    <section>
+    <section id="our-service" class="row our-service">
+      <aside class="col-lg-6">
+        <img src="./assets/img_service.png" class="img-ourService" alt="gambar mbak2 senyum">
+      </aside>
 
+      <div class="col-lg-6 my-auto">
+        <h2 class="fw-bold judul-ourService">Best Car Rental for any kind of trip in Kediri!</h2>
+        <p class="fw-normal text">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex gap-3">
+            <img src="./assets/checklist.png" alt="ini tanda check">
+            <span class="text">Sewa Mobil Dengan Supir di Bali 12 Jam</span>
+          </div>
+          <div class="d-flex gap-3">
+            <img src="./assets/checklist.png" alt="ini tanda check">
+            <span class="text">Sewa Mobil Lepas Kunci di Bali 24 Jam</span>
+          </div>
+          <div class="d-flex gap-3">
+            <img src="./assets/checklist.png" alt="ini tanda check">
+            <span class="text">Sewa Mobil Jangka Panjang Bulanan</span>
+          </div>
+          <div class="d-flex gap-3">
+            <img src="./assets/checklist.png" alt="ini tanda check">
+            <span class="text">Gratis Antar - Jemput Mobil di Bandara</span>
+          </div>
+          <div class="d-flex gap-3">
+            <img src="./assets/checklist.png" alt="ini tanda check">
+            <span class="text">Layanan Airport Transfer / Drop In Out</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section 3 : Why Us -->
