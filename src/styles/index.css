@@ -113,3 +113,13 @@ section {
 .img-ourService {
   width: 90%;
 }
+
+/* why us */
+.why-us {
+  padding: 3% 10% !important;
+}
+
+.why-card {
+  width: 25%;
+  border-radius: 8px;
+}
