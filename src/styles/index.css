@@ -131,16 +131,65 @@ section {
 }
 
 
+/* testimonial */
+.carousel {
+  max-width: 80%;
+}
+
+.testitext {
+  text-align: center;
+}
+
+.carousel-inner {
+  background-color: var(--sec-bg-color);
+  border-radius: 8px;
+  padding: 0 9rem;
+}
+
+.img-persona {
+  width: 100px;
+  border-radius: 100%;
+}
+
+.stars {
+  width: 18px;
+}
+
 /* get start */
 .jumbotron {
   background-color: var(--banner-color);
   border-radius: 13px;
-  text-align: center;
-  color: var(--text-color);
 }
 
 .jumbotext {
-  font-size: 14px;
-  font-weight: normal;
+  text-align: center;
   max-width: 45%;
+}
+
+/* faq */
+.accorder {
+  border: 2px solid grey !important;
+  border-radius: 13px !important;
+}
+
+.accodion-button {
+  background-color: white !important;
+  color: black !important;
+  margin: 2px !important;
+  width: 99%;
+}
+
+/* footer */
+footer {
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.nav-foot {
+  text-decoration: none !important;
+  color: black;
+}
+
+.nav-foot:hover {
+  color: var(--hvr-nav);
 }
