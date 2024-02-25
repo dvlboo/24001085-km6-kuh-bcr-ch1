@@ -17,27 +17,28 @@
 
   <!-- style -->
   <link rel="stylesheet" href="./src/styles/index.css">
+  <link rel="stylesheet" href="./src/styles/breakpoint.css">
 </head>
 <body>
   
   <!-- Header : Navbar -->
   <header id="home">
     <!-- <nav class="navbar navbar-expand"> -->
-    <nav class="d-flex justify-content-between align-items-center px-0">
+    <nav class="d-flex justify-content-between align-items-center">
       <a href="#home" class="navbar-brand"><img src="./assets/logo-bcr.png" alt="" class="logo"></a>
 
       <!-- hidden -->
-      <span class="navbar-toggler-icon d-lg-none" id="hamburger-menu"></span>
+      <span class="bi bi-list d-lg-none hamburger-menu" id="hamburger-menu"></span>
       
-      <div class="flex-column d-lg-flex align-items-center flex-lg-row gap-1 gap-lg-5 menu-items" id="menu-items">
-        
+
+      <div class="d-none flex-column d-lg-flex flex-lg-row gap-1 gap-lg-5 menu-items" id="menu-items">  
         <!-- hidden menu => responsive -->
         <a class="nav-link d-flex justify-content-between align-items-center d-lg-none">
           <div class="fw-blod">BCR</div>
           <div>
-            <span class="bi bi-x-lg" style="font-weight: bolder; font-size: 1.4rem;"></span>
+            <span class="bi bi-x fw-blod close-x" id="close-x"></span>
           </div>
-        </>
+        </a>
 
         <a class="nav-link" href="#our-service">Our Sevices</a>
         <a class="nav-link" href="#why-us">Why Us</a>
