@@ -2,10 +2,14 @@ const hiddenMenu = document.getElementById("hamburger-menu")
 const menuItems = document.getElementById("menu-items")
 const closeX = document.getElementById("close-x")
 
+// efek gelap
+const darkLayer = document.getElementById("bg-darkLayer")
+
 hiddenMenu.addEventListener('click', () => {
   menuItems.classList.remove("d-none")
   menuItems.classList.add("d-flex")
   hiddenMenu.classList.add("d-none")
+  darkLayer.style.display = "block";
 
   function hideMenuOnClickOutside() {
     document.body.addEventListener('click', (event) => {
@@ -14,6 +18,7 @@ hiddenMenu.addEventListener('click', () => {
         menuItems.classList.add("d-none")
         menuItems.classList.remove("d-flex")
         hiddenMenu.classList.remove("d-none")
+        darkLayer.style.display = "none";
         document.body.removeEventListener('click', hideMenuOnClickOutside)
       }
     })
@@ -26,6 +31,7 @@ closeX.addEventListener('click', () => {
   menuItems.classList.add("d-none")
   menuItems.classList.remove("d-flex")
   hiddenMenu.classList.remove("d-none")
+  darkLayer.style.display = "none";
 })
 
 const menuLinks = menuItems.querySelectorAll('a')
@@ -34,5 +40,6 @@ menuLinks.forEach(link => {
     menuItems.classList.add("d-none")
     menuItems.classList.remove("d-flex")
     hiddenMenu.classList.remove("d-none")
+    darkLayer.style.display = "none";
   })
 })
