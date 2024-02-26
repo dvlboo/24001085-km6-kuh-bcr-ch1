@@ -51,6 +51,8 @@ section {
 .hamburger-menu,
 .close-x {
   font-size: 24px;
+  cursor: pointer;
+  transition: 1s ease;
 }
 
 .menu-items a {
@@ -116,7 +118,7 @@ section {
 /* our service */
 .our-service {
   height: auto;
-  padding: 100px 206px !important;
+  padding: 100px 150px !important;
 }
 
 .judul-ourService {
